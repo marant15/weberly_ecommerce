@@ -1,0 +1,55 @@
+version: "3"
+
+services:
+
+  postgres:
+    image: "postgres:9.6"
+    container_name: "postgres"
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    ports:
+    - "5433:5432"
+    volumes:
+    - ./data/postgres:/var/lib/postgresql/data
+
+  initdb:
+    image: ecommerce/airflow
+    entrypoint: airflow db init
+    depends_on:
+      - postgres
+
+  webserver:
+    image: ecommerce/airflow
+    restart: always
+    entrypoint: airflow webserver
+    healthcheck:
+      test: ["CMD-SHELL", "[ -f /opt/airflow/airflow-webserver.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    volumes:
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./data/logs:/opt/airflow/logs
+
+  scheduler:
+    image: ecommerce/airflow
+    restart: always
+    entrypoint: airflow scheduler
+    healthcheck:
+      test: ["CMD-SHELL", "[ -f /opt/airflow/airflow-scheduler.pid ]"]
+      interval: 30s
+      timeout: 30s
+      retries: 3
+    depends_on:
+      - postgres
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./data/logs:/opt/airflow/logs

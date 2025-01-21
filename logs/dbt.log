@@ -1,0 +1,299 @@
+[0m16:20:49.845816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d230590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10debbb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10debbc50>]}
+
+
+============================== 16:20:49.853525 | e9a060e3-c105-432c-b1b8-fb36e38b356a ==============================
+[0m16:20:49.853525 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:20:49.854562 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init ecommerce_dbt', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:20:49.873215 [debug] [MainThread]: Starter project path: /Users/marwin/airflow-env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m16:20:49.882771 [info ] [MainThread]: 
+Your new dbt project "ecommerce_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:20:49.883506 [info ] [MainThread]: Setting up your profile.
+[0m16:21:38.214766 [info ] [MainThread]: Profile ecommerce_dbt written to /Users/marwin/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:21:38.217165 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 48.46968, "process_in_blocks": "0", "process_kernel_time": 0.335286, "process_mem_max_rss": "93196288", "process_out_blocks": "0", "process_user_time": 1.716196}
+[0m16:21:38.217799 [debug] [MainThread]: Command `dbt init` succeeded at 16:21:38.217639 after 48.47 seconds
+[0m16:21:38.218289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e430e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c15f650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df56360>]}
+[0m16:21:38.218801 [debug] [MainThread]: Flushing usage events
+[0m16:21:38.861447 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:21:53.734238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f28590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104babb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104babc50>]}
+
+
+============================== 16:21:53.742185 | 1605b80e-c03f-49c6-9965-61b19ae6186f ==============================
+[0m16:21:53.742185 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:21:53.743082 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:21:53.762471 [info ] [MainThread]: dbt version: 1.9.1
+[0m16:21:53.762965 [info ] [MainThread]: python version: 3.13.1
+[0m16:21:53.763345 [info ] [MainThread]: python path: /Users/marwin/airflow-env/bin/python
+[0m16:21:53.763708 [info ] [MainThread]: os info: macOS-12.7.6-x86_64-i386-64bit-Mach-O
+[0m16:21:53.870038 [info ] [MainThread]: Using profiles dir at /Users/marwin/.dbt
+[0m16:21:53.870556 [info ] [MainThread]: Using profiles.yml file at /Users/marwin/.dbt/profiles.yml
+[0m16:21:53.870935 [info ] [MainThread]: Using dbt_project.yml file at /Users/marwin/projects/ecommerce/dbt_project.yml
+[0m16:21:53.871390 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m16:21:53.873339 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.24089491, "process_in_blocks": "0", "process_kernel_time": 0.340245, "process_mem_max_rss": "93921280", "process_out_blocks": "0", "process_user_time": 1.764835}
+[0m16:21:53.873976 [debug] [MainThread]: Command `dbt debug` failed at 16:21:53.873815 after 0.24 seconds
+[0m16:21:53.874479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10512da70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105159010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c4b9b0>]}
+[0m16:21:53.875008 [debug] [MainThread]: Flushing usage events
+[0m16:21:54.410196 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:23:38.854702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10377c590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104407b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104407c50>]}
+
+
+============================== 16:23:38.862878 | 7f85a144-6eaf-48a1-b68e-e98ccbf27e1b ==============================
+[0m16:23:38.862878 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:23:38.863769 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:23:38.882358 [info ] [MainThread]: dbt version: 1.9.1
+[0m16:23:38.882913 [info ] [MainThread]: python version: 3.13.1
+[0m16:23:38.883571 [info ] [MainThread]: python path: /Users/marwin/airflow-env/bin/python
+[0m16:23:38.884078 [info ] [MainThread]: os info: macOS-12.7.6-x86_64-i386-64bit-Mach-O
+[0m16:23:38.987479 [info ] [MainThread]: Using profiles dir at /Users/marwin/.dbt
+[0m16:23:38.988039 [info ] [MainThread]: Using profiles.yml file at /Users/marwin/.dbt/profiles.yml
+[0m16:23:38.988440 [info ] [MainThread]: Using dbt_project.yml file at /Users/marwin/projects/ecommerce/dbt_project.yml
+[0m16:23:38.988935 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m16:23:38.990911 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.23318858, "process_in_blocks": "0", "process_kernel_time": 0.30096, "process_mem_max_rss": "93405184", "process_out_blocks": "0", "process_user_time": 1.72333}
+[0m16:23:38.991749 [debug] [MainThread]: Command `dbt debug` failed at 16:23:38.991573 after 0.23 seconds
+[0m16:23:38.992206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104981a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049b1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044a39b0>]}
+[0m16:23:38.992668 [debug] [MainThread]: Flushing usage events
+[0m16:23:39.629645 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:36.088765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104bc590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111147b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111147c50>]}
+
+
+============================== 16:24:36.095147 | 9bde8901-0179-4ff3-8055-88dc1e80fe8b ==============================
+[0m16:24:36.095147 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:24:36.095930 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:24:36.108042 [info ] [MainThread]: dbt version: 1.9.1
+[0m16:24:36.108505 [info ] [MainThread]: python version: 3.13.1
+[0m16:24:36.108901 [info ] [MainThread]: python path: /Users/marwin/airflow-env/bin/python
+[0m16:24:36.109425 [info ] [MainThread]: os info: macOS-12.7.6-x86_64-i386-64bit-Mach-O
+[0m16:24:36.186508 [info ] [MainThread]: Using profiles dir at /Users/marwin/.dbt
+[0m16:24:36.187051 [info ] [MainThread]: Using profiles.yml file at /Users/marwin/.dbt/profiles.yml
+[0m16:24:36.187473 [info ] [MainThread]: Using dbt_project.yml file at /Users/marwin/projects/ecommerce/dbt_project.yml
+[0m16:24:36.188361 [info ] [MainThread]: adapter type: postgres
+[0m16:24:36.188756 [info ] [MainThread]: adapter version: 1.9.0
+[0m16:24:36.189159 [info ] [MainThread]: Configuration:
+[0m16:24:36.189523 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:24:36.190036 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:24:36.190516 [info ] [MainThread]: Required dependencies:
+[0m16:24:36.191092 [debug] [MainThread]: Executing "git --help"
+[0m16:24:36.206280 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:24:36.208096 [debug] [MainThread]: STDERR: "b''"
+[0m16:24:36.208664 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:24:36.209206 [info ] [MainThread]: Connection:
+[0m16:24:36.209722 [info ] [MainThread]:   host: 127.0.0.1
+[0m16:24:36.210092 [info ] [MainThread]:   port: 5432
+[0m16:24:36.210601 [info ] [MainThread]:   user: postgres
+[0m16:24:36.211249 [info ] [MainThread]:   database: ecommerce
+[0m16:24:36.211827 [info ] [MainThread]:   schema: ecommerce
+[0m16:24:36.212220 [info ] [MainThread]:   connect_timeout: 10
+[0m16:24:36.212639 [info ] [MainThread]:   role: None
+[0m16:24:36.213006 [info ] [MainThread]:   search_path: None
+[0m16:24:36.213366 [info ] [MainThread]:   keepalives_idle: 0
+[0m16:24:36.213777 [info ] [MainThread]:   sslmode: None
+[0m16:24:36.214343 [info ] [MainThread]:   sslcert: None
+[0m16:24:36.214783 [info ] [MainThread]:   sslkey: None
+[0m16:24:36.215242 [info ] [MainThread]:   sslrootcert: None
+[0m16:24:36.215665 [info ] [MainThread]:   application_name: dbt
+[0m16:24:36.216095 [info ] [MainThread]:   retries: 1
+[0m16:24:36.217057 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:24:36.311186 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m16:24:36.364883 [debug] [MainThread]: Using postgres connection "debug"
+[0m16:24:36.365384 [debug] [MainThread]: On debug: select 1 as id
+[0m16:24:36.365764 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:24:36.422959 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce" does not exist
+
+[0m16:24:36.436011 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m16:24:36.436492 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m16:24:36.436922 [debug] [MainThread]: On debug: No close available on handle
+[0m16:24:36.437358 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:24:36.437896 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:24:36.438341 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/marwin/projects/ecommerce/dbt_project.yml> not found
+
+[0m16:24:36.438763 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:24:36.440172 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.44455126, "process_in_blocks": "0", "process_kernel_time": 0.306966, "process_mem_max_rss": "103493632", "process_out_blocks": "0", "process_user_time": 1.795664}
+[0m16:24:36.440764 [debug] [MainThread]: Command `dbt debug` failed at 16:24:36.440613 after 0.45 seconds
+[0m16:24:36.441312 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:24:36.441772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116c2c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116f20f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1111e2e00>]}
+[0m16:24:36.442322 [debug] [MainThread]: Flushing usage events
+[0m16:24:36.964273 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:17.315213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a74590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056ffb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1056ffc50>]}
+
+
+============================== 17:06:17.327520 | 2dc566b6-2cad-4d51-93a0-6cafd2fd0e5e ==============================
+[0m17:06:17.327520 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:06:17.328751 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:17.358351 [info ] [MainThread]: dbt version: 1.9.1
+[0m17:06:17.359230 [info ] [MainThread]: python version: 3.13.1
+[0m17:06:17.360278 [info ] [MainThread]: python path: /Users/marwin/airflow-env/bin/python
+[0m17:06:17.361051 [info ] [MainThread]: os info: macOS-12.7.6-x86_64-i386-64bit-Mach-O
+[0m17:06:17.666503 [info ] [MainThread]: Using profiles dir at /Users/marwin/.dbt
+[0m17:06:17.667405 [info ] [MainThread]: Using profiles.yml file at /Users/marwin/.dbt/profiles.yml
+[0m17:06:17.668235 [info ] [MainThread]: Using dbt_project.yml file at /Users/marwin/projects/ecommerce/dbt_project.yml
+[0m17:06:17.671346 [info ] [MainThread]: adapter type: postgres
+[0m17:06:17.673404 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:06:17.674279 [info ] [MainThread]: Configuration:
+[0m17:06:17.675017 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:06:17.675685 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:06:17.676362 [info ] [MainThread]: Required dependencies:
+[0m17:06:17.677230 [debug] [MainThread]: Executing "git --help"
+[0m17:06:17.704346 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:06:17.706549 [debug] [MainThread]: STDERR: "b''"
+[0m17:06:17.707683 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:06:17.708544 [info ] [MainThread]: Connection:
+[0m17:06:17.709458 [info ] [MainThread]:   host: 127.0.0.1
+[0m17:06:17.710163 [info ] [MainThread]:   port: 5432
+[0m17:06:17.710826 [info ] [MainThread]:   user: postgres
+[0m17:06:17.711490 [info ] [MainThread]:   database: ecommerce
+[0m17:06:17.712145 [info ] [MainThread]:   schema: ecommerce
+[0m17:06:17.712809 [info ] [MainThread]:   connect_timeout: 10
+[0m17:06:17.713474 [info ] [MainThread]:   role: None
+[0m17:06:17.714143 [info ] [MainThread]:   search_path: None
+[0m17:06:17.714953 [info ] [MainThread]:   keepalives_idle: 0
+[0m17:06:17.715774 [info ] [MainThread]:   sslmode: None
+[0m17:06:17.716564 [info ] [MainThread]:   sslcert: None
+[0m17:06:17.717313 [info ] [MainThread]:   sslkey: None
+[0m17:06:17.717980 [info ] [MainThread]:   sslrootcert: None
+[0m17:06:17.719789 [info ] [MainThread]:   application_name: dbt
+[0m17:06:17.720666 [info ] [MainThread]:   retries: 1
+[0m17:06:17.723145 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:06:17.994439 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m17:06:18.157872 [debug] [MainThread]: Using postgres connection "debug"
+[0m17:06:18.158759 [debug] [MainThread]: On debug: select 1 as id
+[0m17:06:18.159424 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:06:18.262133 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce" does not exist
+
+[0m17:06:18.295603 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m17:06:18.296444 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m17:06:18.297240 [debug] [MainThread]: On debug: No close available on handle
+[0m17:06:18.298039 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:06:18.299020 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:06:18.299752 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/marwin/projects/ecommerce/dbt_project.yml> not found
+
+[0m17:06:18.300500 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "ecommerce" does not exist
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:06:18.303558 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2254375, "process_in_blocks": "0", "process_kernel_time": 0.819351, "process_mem_max_rss": "103907328", "process_out_blocks": "0", "process_user_time": 3.291493}
+[0m17:06:18.304647 [debug] [MainThread]: Command `dbt debug` failed at 17:06:18.304374 after 1.23 seconds
+[0m17:06:18.305484 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:06:18.306322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105c7ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105cae0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10579ae00>]}
+[0m17:06:18.307329 [debug] [MainThread]: Flushing usage events
+[0m17:06:18.945791 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:13:28.607580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106fb0590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d27b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d27c50>]}
+
+
+============================== 17:13:28.623167 | 6652c4ba-c1b6-4383-809a-29142eb94309 ==============================
+[0m17:13:28.623167 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:13:28.624788 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:28.646568 [info ] [MainThread]: dbt version: 1.9.1
+[0m17:13:28.647341 [info ] [MainThread]: python version: 3.13.1
+[0m17:13:28.648062 [info ] [MainThread]: python path: /Users/marwin/airflow-env/bin/python
+[0m17:13:28.648779 [info ] [MainThread]: os info: macOS-12.7.6-x86_64-i386-64bit-Mach-O
+[0m17:13:28.885337 [info ] [MainThread]: Using profiles dir at /Users/marwin/.dbt
+[0m17:13:28.886222 [info ] [MainThread]: Using profiles.yml file at /Users/marwin/.dbt/profiles.yml
+[0m17:13:28.886949 [info ] [MainThread]: Using dbt_project.yml file at /Users/marwin/projects/ecommerce/dbt_project.yml
+[0m17:13:28.888083 [info ] [MainThread]: adapter type: postgres
+[0m17:13:28.888807 [info ] [MainThread]: adapter version: 1.9.0
+[0m17:13:28.889524 [info ] [MainThread]: Configuration:
+[0m17:13:28.890220 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:13:28.890904 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:13:28.891623 [info ] [MainThread]: Required dependencies:
+[0m17:13:28.892444 [debug] [MainThread]: Executing "git --help"
+[0m17:13:28.923570 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:13:28.926200 [debug] [MainThread]: STDERR: "b''"
+[0m17:13:28.927511 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:13:28.928372 [info ] [MainThread]: Connection:
+[0m17:13:28.929328 [info ] [MainThread]:   host: 127.0.0.1
+[0m17:13:28.930079 [info ] [MainThread]:   port: 5432
+[0m17:13:28.930796 [info ] [MainThread]:   user: postgres
+[0m17:13:28.931519 [info ] [MainThread]:   database: ecommerce
+[0m17:13:28.932241 [info ] [MainThread]:   schema: ecommerce
+[0m17:13:28.932946 [info ] [MainThread]:   connect_timeout: 10
+[0m17:13:28.933661 [info ] [MainThread]:   role: None
+[0m17:13:28.934355 [info ] [MainThread]:   search_path: None
+[0m17:13:28.935083 [info ] [MainThread]:   keepalives_idle: 0
+[0m17:13:28.935794 [info ] [MainThread]:   sslmode: None
+[0m17:13:28.937886 [info ] [MainThread]:   sslcert: None
+[0m17:13:28.938689 [info ] [MainThread]:   sslkey: None
+[0m17:13:28.939850 [info ] [MainThread]:   sslrootcert: None
+[0m17:13:28.940686 [info ] [MainThread]:   application_name: dbt
+[0m17:13:28.941399 [info ] [MainThread]:   retries: 1
+[0m17:13:28.942773 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m17:13:29.209253 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m17:13:29.350107 [debug] [MainThread]: Using postgres connection "debug"
+[0m17:13:29.350954 [debug] [MainThread]: On debug: select 1 as id
+[0m17:13:29.351680 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:13:29.420154 [debug] [MainThread]: SQL status: SELECT 1 in 0.068 seconds
+[0m17:13:29.422604 [debug] [MainThread]: On debug: Close
+[0m17:13:29.423490 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:13:29.424557 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:13:29.425222 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/marwin/projects/ecommerce/dbt_project.yml> not found
+
+[0m17:13:29.427356 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.0413827, "process_in_blocks": "0", "process_kernel_time": 0.512872, "process_mem_max_rss": "103157760", "process_out_blocks": "0", "process_user_time": 3.225592}
+[0m17:13:29.428432 [debug] [MainThread]: Command `dbt debug` failed at 17:13:29.428175 after 1.04 seconds
+[0m17:13:29.429237 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:13:29.432772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ec6d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1082d67b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107dc2e00>]}
+[0m17:13:29.433948 [debug] [MainThread]: Flushing usage events
+[0m17:13:30.080740 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m04:11:46.588188 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103da5160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bebb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bebc50>]}
+
+
+============================== 04:11:46.596934 | 4ce2219c-34a1-412a-bed8-322f79a66238 ==============================
+[0m04:11:46.596934 [info ] [MainThread]: Running with dbt=1.9.1
+[0m04:11:46.597848 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/marwin/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test --select source*', 'send_anonymous_usage_stats': 'True'}
+[0m04:11:46.598630 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/marwin/projects/ecommerce/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m04:11:46.600028 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.0988675, "process_in_blocks": "0", "process_kernel_time": 0.208877, "process_mem_max_rss": "92897280", "process_out_blocks": "0", "process_user_time": 1.612479}
+[0m04:11:46.600613 [debug] [MainThread]: Command `dbt test` failed at 04:11:46.600453 after 0.10 seconds
+[0m04:11:46.601088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c38640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a6f650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104af4f30>]}
+[0m04:11:46.601543 [debug] [MainThread]: Flushing usage events
+[0m04:11:47.232745 [debug] [MainThread]: An error was encountered while trying to flush usage events

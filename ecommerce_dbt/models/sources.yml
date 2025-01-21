@@ -1,0 +1,78 @@
+version: 2
+
+sources:
+  - name: ecommerce
+    description: This is a replica of the Postgres database used by our app
+    tables:
+      - name: products
+        description: "Product data"
+        columns:
+          - name: product_id
+            description: "The primary key for this table"
+            data_tests:
+              #- unique
+              - not_null
+          - name: name
+            description: "product name"
+            data_tests:
+              - not_null
+          - name: category
+            description: "product category"
+            data_tests:
+              - not_null
+          - name: price
+            description: "product price"
+            #data_tests:
+            #  - not_null
+
+      - name: orders
+        description: "orders data"
+        columns:
+          - name: order_id
+            description: "primary key and order id"
+            data_tests:
+              - unique
+              - not_null
+          - name: customer_id
+            description: "customer id"
+            data_tests:
+              - not_null
+          - name: order_date
+            description: "order date"
+            data_tests:
+              - not_null
+          - name: total_amount
+            description: "order total"
+            data_tests:
+              - not_null
+
+      - name: order_items
+        description: "items in orders"
+        columns:
+          - name: order_item_id
+            description: "primary key and order item id"
+            data_tests:
+              - unique
+              - not_null
+          - name: order_id
+            description: "order id, refers to the orders table"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: ref('orders')
+                  field: order_id
+          - name: product_id
+            description: "product id, refers to the products table"
+            data_tests:
+              - not_null
+              - relationships:
+                  to: ref('products')
+                  field: product_id
+          - name: quantity
+            description: "product quantity for order"
+            data_tests:
+              - not_null
+          - name: price
+            description: "unitary product price"
+            data_tests:
+              - not_null
