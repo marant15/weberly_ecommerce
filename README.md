@@ -25,3 +25,46 @@ To generate DBT documentation:
   dbt docs generate
   dbt docs serve
 ```
+
+
+## DB init
+
+run sql:
+
+```sql
+  CREATE TABLE IF NOT EXISTS ecommerce.order_items
+(
+    order_item_id text COLLATE pg_catalog."default" NOT NULL,
+    order_id text COLLATE pg_catalog."default",
+    product_id text COLLATE pg_catalog."default",
+    quantity integer,
+    price double precision
+)
+
+TABLESPACE pg_default;
+```
+
+```sql
+  CREATE TABLE IF NOT EXISTS ecommerce.orders
+(
+    order_id text COLLATE pg_catalog."default" NOT NULL,
+    customer_id text COLLATE pg_catalog."default",
+    order_date date,
+    total_amount double precision,
+    CONSTRAINT orders_pkey PRIMARY KEY (order_id)
+)
+
+TABLESPACE pg_default;
+```
+
+```sql
+  CREATE TABLE IF NOT EXISTS ecommerce.products
+(
+    product_id text COLLATE pg_catalog."default" NOT NULL,
+    name text COLLATE pg_catalog."default",
+    category text COLLATE pg_catalog."default",
+    price double precision
+)
+
+TABLESPACE pg_default;
+```
